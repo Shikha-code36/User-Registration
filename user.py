@@ -9,7 +9,7 @@ from typing import Optional
 app = FastAPI()
 
 # PostgreSQL Database Setup
-DATABASE_URL = "postgresql://username:password@localhost/dbname"
+DATABASE_URL = "postgresql://admin:123456@localhost/user"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
